@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
+    <link rel="stylesheet" href="/style.css" />
     <script src="snakeGame.js" defer></script>
-    <style>
-      canvas {
-        border: 1px solid black;
-        display: block;
-        margin: 0 auto;
-        background-color: #f0f0f0;
-      }
-    </style>
   </head>
   <body>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
-    <button id="resetButton">Reset Game</button>
+    <div class="anim-border">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="wrapper">
+      <button id="resetButton">Reset Game</button>
+    </div>
   </body>
 </html>

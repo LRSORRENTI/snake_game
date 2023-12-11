@@ -1,3 +1,11 @@
+window.addEventListener('keydown', function(e) {
+    if(["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+    }
+}, false);
+
+
+
 // GAME VARIABLES AND TYPES:
 var canvas = document.getElementById('gameCanvas');
 var ctx = canvas.getContext('2d');
@@ -41,14 +49,14 @@ function advanceSnake() {
 }
 function drawSnake() {
     snake.forEach(function (part) {
-        ctx.fillStyle = 'green';
+        ctx.fillStyle = 'lime';
         ctx.fillRect(part.x, part.y, 10, 10);
         ctx.strokeRect(part.x, part.y, 10, 10);
     });
 }
 // CLEAR CANVAS: 
 function clearCanvas() {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = '#fff';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 // SNAKE FOOD FUNCTIONS:
@@ -68,7 +76,7 @@ function createFood() {
     });
 }
 function drawFood() {
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = 'magenta';
     ctx.fillRect(food.x, food.y, 10, 10);
     ctx.strokeRect(food.x, food.y, 10, 10);
 }
