@@ -117,7 +117,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: 50% 50%, 50% 50%;
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  background-image: linear-gradient(#2e00ff, #917af9);
+  background-image: linear-gradient(#00ff00, #f02eaa66);
   -webkit-animation: rotate 4s linear infinite;
   animation: rotate 4s linear infinite;
 }
