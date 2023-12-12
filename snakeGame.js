@@ -56,7 +56,8 @@ function drawSnake() {
 }
 // CLEAR CANVAS: 
 function clearCanvas() {
-    ctx.fillStyle = '#fff';
+    // ctx.fillStyle = '#fff';
+    ctx.fillStyle = '#222021';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 // SNAKE FOOD FUNCTIONS:
