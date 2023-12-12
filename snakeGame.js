@@ -77,7 +77,7 @@ function createFood() {
     });
 }
 function drawFood() {
-    ctx.fillStyle = 'magenta';
+    ctx.fillStyle = '#ff1867';
     ctx.fillRect(food.x, food.y, 10, 10);
     ctx.strokeRect(food.x, food.y, 10, 10);
 }

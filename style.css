@@ -271,20 +271,24 @@ canvas {
 #arrow-keys {
   margin-top: 4px;
   text-align: center;
+  margin-left: auto;
   /* border: 3px solid lime; */
 }
 
 #arrow-keys button {
-  background-color: #4caf50; /* Green */
+  /* background-color: #4caf50;*/
+  background-color: #ff1867;
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 26px;
   margin: 2px 2px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #arrow-key-up {
