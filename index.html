@@ -8,11 +8,20 @@
     <script src="snakeGame.js" defer></script>
   </head>
   <body>
-    <div class="anim-border">
-      <canvas id="gameCanvas" width="400" height="400"></canvas>
-    </div>
     <div class="wrapper">
       <button id="resetButton">Reset Game</button>
+    </div>
+    <div class="wrap">
+      <a id="resetButton" class="button" style="--color: #ff1867">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Reset
+      </a>
+    </div>
+    <div class="anim-border">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
     </div>
     <div id="arrow-keys">
       <button id="up" onclick="moveSnake('up')">^</button>
