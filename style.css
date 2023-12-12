@@ -271,7 +271,7 @@ canvas {
 #arrow-keys {
   margin-top: 4px;
   text-align: center;
-  margin-left: auto;
+  margin-left: 2%;
   /* border: 3px solid lime; */
 }
 
@@ -287,8 +287,10 @@ canvas {
   font-size: 26px;
   margin: 2px 2px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  box-shadow: #ff1867 0px 2px 4px, #ff1867 0px 7px 13px -3px,
+    #ff1867 0px -3px 0px inset;
 }
 
 #arrow-key-up {
