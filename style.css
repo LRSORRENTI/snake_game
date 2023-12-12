@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: -10px;
 }
 
 .button {
@@ -268,15 +269,16 @@ canvas {
 }
 
 #arrow-keys {
-  margin-top: 40px;
+  margin-top: 4px;
   text-align: center;
+  /* border: 3px solid lime; */
 }
 
 #arrow-keys button {
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -288,6 +290,8 @@ canvas {
 #arrow-key-up {
   text-align: center;
   margin-bottom: 2px;
+  margin-top: 10px;
+
   /* Space between the two rows */
 }
 
