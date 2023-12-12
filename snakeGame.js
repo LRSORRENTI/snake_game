@@ -135,6 +135,8 @@ function didGameEnd() {
 }
 // RESET GAME LOGIC:
 document.getElementById('resetButton').addEventListener('click', resetGame);
+const reset = document.getElementById('reset');
+reset.addEventListener('click', resetGame);
 function resetGame() {
     snake = [
         { x: 200, y: 200 },
