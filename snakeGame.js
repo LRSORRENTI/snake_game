@@ -133,6 +133,47 @@ function didGameEnd() {
     }
     return false;
 }
+
+function moveSnake(direction) {
+    const goingUp = dy === -10;
+    const goingDown = dy === 10;
+    const goingRight = dx === 10;
+    const goingLeft = dx === -10;
+
+    switch (direction) {
+        case 'up':
+            if (!goingDown) {
+                dx = 0;
+                dy = -10;
+            }
+            break;
+        case 'down':
+            if (!goingUp) {
+                dx = 0;
+                dy = 10;
+            }
+            break;
+        case 'left':
+            if (!goingRight) {
+                dx = -10;
+                dy = 0;
+            }
+            break;
+        case 'right':
+            if (!goingLeft) {
+                dx = 10;
+                dy = 0;
+            }
+            break;
+    }
+}
+
+document.getElementById('up').addEventListener('click', () => moveSnake('up'));
+document.getElementById('down').addEventListener('click', () => moveSnake('down'));
+document.getElementById('left').addEventListener('click', () => moveSnake('left'));
+document.getElementById('right').addEventListener('click', () => moveSnake('right'));
+
+
 // RESET GAME LOGIC:
 document.getElementById('resetButton').addEventListener('click', resetGame);
 const reset = document.getElementById('reset');
