@@ -177,7 +177,7 @@ canvas {
 #resetButton {
   /* display: inline-block;
   margin-left: 40%; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 @-webkit-keyframes rotate {
